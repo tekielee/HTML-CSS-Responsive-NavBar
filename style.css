@@ -1,0 +1,33 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.nav-container {
+	display: flex;
+	height: 50px;
+}
+
+.nav-left {
+	display: flex;
+	background-color: red;
+	width: 20%;
+	justify-content: center;
+}
+
+.logo {
+	align-self: center;
+}
+
+.nav-right {
+	display: flex;
+	background-color: green;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+.nav-item {
+	width: 100px;
+	text-align: center;
+	align-self: center;
+}
