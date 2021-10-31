@@ -6,12 +6,13 @@ body {
 .nav-container {
 	display: flex;
 	height: 50px;
+	width: 100%;
+	background-color: green;
 }
 
 .nav-left {
 	display: flex;
-	background-color: red;
-	width: 20%;
+	width: 15%;
 	justify-content: center;
 }
 
@@ -19,10 +20,9 @@ body {
 	align-self: center;
 }
 
-.nav-right {
+.nav-menu {
 	display: flex;
-	background-color: green;
-	width: 100%;
+	width: 85%;
 	justify-content: flex-end;
 }
 
@@ -30,4 +30,46 @@ body {
 	width: 100px;
 	text-align: center;
 	align-self: center;
+}
+
+.bun {
+	display: none;
+}
+
+@media only screen and (max-width: 600px) {
+	.bun {
+		display: flex;
+		width: 10%;
+		flex-direction: column;
+		justify-content: space-evenly;
+		cursor: pointer;
+	}
+	.ham {
+		width: 100%;
+		height: 5px;
+		background-color: white;
+		border-radius: 25px;
+	}
+	.nav-container {
+		flex-wrap: wrap;
+		height: auto;
+	}
+	.nav-left {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		padding: 0 1% 0 4%;
+		height: 40px;
+	}
+	.nav-menu {
+		width: 100%;
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: auto;
+		padding: 20px 0 0 0;
+	}
+	
+	.nav-item {
+		height: 30px;
+	}
 }
