@@ -1,2 +1,2 @@
 # HTML-CSS-Responsive-NavBar
-A responsive nav bar using flex box
+A responsive nav bar with mobile hamburger menu using flex box
